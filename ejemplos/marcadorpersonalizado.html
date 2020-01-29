@@ -1,0 +1,29 @@
+
+<html>
+    <!-- Ejemplo de uso de marcadores personalizados -->
+    <!--
+        Generador online de marcadores: https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
+    -->
+    <head>
+      <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+      <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+
+      <!-- Script para animaciones -->
+      <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
+
+    </head>
+    
+    <body >
+        <a-scene embedded arjs>
+            <a-marker type="pattern" preset="custom" url="./assets/dinosaurio/trex.patt">
+                <a-entity scale="0.007 0.007 0.007" gltf-model="url(./assets/dinosaurio/modelo/scene.gltf)" 
+                         animation-mixer>
+                </a-entity>
+            </a-marker>
+          <a-entity camera></a-entity>
+        </a-scene>
+      </body>
+</html>
+
+
+

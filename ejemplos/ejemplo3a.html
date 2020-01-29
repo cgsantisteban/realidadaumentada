@@ -1,0 +1,33 @@
+<html>
+  <!-- Ejemplo con diferentes formas añadidas -->
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        
+        <!-- Caja -->
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="red"
+                animation="property: rotation.y; to: 360; dur: 2000; loop: true; easing: linear">
+        </a-box> 
+
+        <!-- Esfera -->
+        <a-sphere position="0 1.25 -5" radius="1.25" color="green"></a-sphere>
+
+        <!-- Clindro -->
+        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+
+        <!-- Texto -->
+        <a-text value="Hola Guadalinfo" width="20" height="20" 
+                align="center" position="0 4 -5" color="blue"></a-text>
+
+
+        <!-- Plano o suelo -->
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+
+        <!-- Cielo -->
+        <a-sky color="#12F5F1 "></a-sky>
+        
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+
+<html>
+    <!-- Ejemplo de modelo animado -->
+    <head>
+      <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+      <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+
+      <!-- Script para animaciones -->
+      <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
+    </head>
+    
+
+    <body >
+      <a-scene embedded arjs>
+        <a-marker preset="hiro">
+          <a-entity scale="0.008 0.008 0.008" position="0 0 0" 
+              gltf-model="src: url(./assets/kgirl/scene.gltf);" animation-mixer>
+          </a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
+    </body>
+</html>

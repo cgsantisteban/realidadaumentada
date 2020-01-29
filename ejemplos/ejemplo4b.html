@@ -1,0 +1,21 @@
+<html>
+  <!--Uso de texturas. En este caso la textura se carga con la etiqueta <img>
+    y se le asocia un identificador (id) para poder usarla posteriormente -->
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="tierraTextura" src="./assets/tierra.jpg">
+        </a-assets>
+        
+        <a-sphere src="#tierraTextura" position="0 2 -3" radius="1"
+                animation="property: rotation.y; to: 360; dur: 4000; 
+                        loop: true; easing: linear">
+                        
+        </a-sphere>
+        
+    </a-scene>
+  </body>
+</html>
